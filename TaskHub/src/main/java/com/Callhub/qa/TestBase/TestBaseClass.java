@@ -60,7 +60,7 @@ public class TestBaseClass {
 		}
 
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		String search_url = prop.getProperty("url");
 		System.out.println(search_url);
 		driver.manage().window().maximize();
